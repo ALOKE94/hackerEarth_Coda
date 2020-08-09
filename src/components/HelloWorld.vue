@@ -1,5 +1,5 @@
 <template>
-  <div style="background-color:#f8f8ff" class="applyPadding">
+  <div  class="applyPadding">
     <div class="topright">
       <img src="../assets/images/Illustration2.png" width="180px" height="150px" />
     </div>
@@ -19,15 +19,19 @@
     <v-row no-gutters align="center" style="padding-top:50px;margin-bottom:50px">
       <img src="../assets/Icons/Icon feather-search.png" width="20px" height="20px" />Search your recepie here
     </v-row>
-    
-<v-card-actions>
-  <v-spacer></v-spacer>
-  <div style="padding-right:190px;font-size:30px">Pizza & Noodles</div>
-</v-card-actions>
-    
 
-    <div no-gutters>
+    <v-card-actions>
+      <v-spacer></v-spacer>
+      <div style="font-size:30px">Pizza & Noodles</div>
+    </v-card-actions>
+
+    <!-- <div no-gutters>
       <div v-for="item in result" :key="item">
+        <FoodCard :resultData="item"></FoodCard>
+      </div>
+    </div>-->
+    <div v-masonry origin-left="false" transition-duration="1s" item-selector=".item">
+      <div v-masonry-tile class="item" v-for="(item, index) in result" :key="index">
         <FoodCard :resultData="item"></FoodCard>
       </div>
     </div>
@@ -104,8 +108,8 @@ export default {
 }
 
 .applyPadding {
-  padding-bottom: 150px;
-  padding-left: 150px;
-  padding-right: 150px;
+ max-width:864px;
+ margin: 0 auto;
+
 }
 </style>

@@ -3,20 +3,20 @@
     max-width="200"
    
     raised
-    class="ma-2 container"
+    class="ma-2 pa-0 container"
     style="border-radius: 16px;"
   >
 
 
-  {{resultData}}
-    <!-- <v-img class="mb-n6" :src="resultData.image"></v-img>
+  
+    <v-img class="" :src="resultData.image"></v-img>
     <div class="top-right rectangle" style="background-color:#000000">
       <div style="color:#ffffff">{{resultData.category}}</div>
     </div>
 
     <v-col
-      style="background-image: linear-gradient( rgba(255,0,0,0) 0%, #000000 30%);z-index:850"
-      class="pa-3"
+      style="background-image: linear-gradient( rgba(255,0,0,0) 0%, #000000 30%);"
+      class="pa-3 cardContent"
     >
       <v-row no-gutters align="center">
         <v-col class="ma-0 pa-0">
@@ -36,7 +36,7 @@
 
         <div style="color:#ffffff">{{resultData.description}}</div>
       </v-card-text>
-    </v-col> -->
+    </v-col>
   </v-card>
 </template>
 
@@ -61,6 +61,9 @@ export default {
   width: 150px;
   border-radius: 0px 10px 0px 10px;
   text-align: center;
+}
+.cardContent{
+position: relative;
 }
 .container {
   position: relative;

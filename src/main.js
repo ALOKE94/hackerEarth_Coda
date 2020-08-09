@@ -4,12 +4,11 @@ import './registerServiceWorker'
 import router from './router'
 import store from './store'
 import vuetify from './plugins/vuetify';
-import {VueMasonryPuglin} from 'vue-masonry'
+import {VueMasonryPlugin} from 'vue-masonry'
 
 Vue.config.productionTip = false
 
-//Vue.use(VueMasonryPuglin)
-console.log(VueMasonryPuglin);
+Vue.use(VueMasonryPlugin)
 new Vue({
   router,
   store,
