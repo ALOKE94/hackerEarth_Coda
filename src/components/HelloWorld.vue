@@ -1,5 +1,5 @@
 <template>
-  <div  class="applyPadding">
+  <div class="applyPadding">
     <div class="topright">
       <img src="../assets/images/Illustration2.png" width="180px" height="150px" />
     </div>
@@ -24,12 +24,6 @@
       <v-spacer></v-spacer>
       <div style="font-size:30px">Pizza & Noodles</div>
     </v-card-actions>
-
-    <!-- <div no-gutters>
-      <div v-for="item in result" :key="item">
-        <FoodCard :resultData="item"></FoodCard>
-      </div>
-    </div>-->
     <div v-masonry origin-left="false" transition-duration="1s" item-selector=".item">
       <div v-masonry-tile class="item" v-for="(item, index) in result" :key="index">
         <FoodCard :resultData="item"></FoodCard>
@@ -108,8 +102,7 @@ export default {
 }
 
 .applyPadding {
- max-width:864px;
- margin: 0 auto;
-
+  max-width: 1024px;
+  margin: 0 auto;
 }
 </style>
