@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.628dd96255187094e449d5553cce0f20.js"
+  "/hackerEarth_Coda/precache-manifest.218b906d8782a059cc331471f30bdbd1.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "mummy_mould"});
